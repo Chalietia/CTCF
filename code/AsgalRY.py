@@ -581,10 +581,10 @@ def main():
     if not os.path.isdir(args.outputPath):
         os.makedirs(args.outputPath)
     
-    ## RY: If 2nd+run, annotate out next two steps. splitannotation takes long time.
+    ## RY: Would be helpful to make a version with stage specification, let's see if I can remember
     genes, chr_genes_dict, tr_gene_dict = splitAnnotation(args)
     if args.multiMode:
-        #splitReference(args)
+        splitReference(args)
 
     if args.multiMode:
         runSalmon(args)
