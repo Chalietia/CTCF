@@ -581,9 +581,9 @@ def main():
     if not os.path.isdir(args.outputPath):
         os.makedirs(args.outputPath)
     
-    ##Since the indexes are the same so I'm skipping it for 2nd+ run
-    #genes, chr_genes_dict, tr_gene_dict = splitAnnotation(args)
-    #if args.multiMode:
+    ## RY: If 2nd+run, annotate out next two steps. splitannotation takes long time.
+    genes, chr_genes_dict, tr_gene_dict = splitAnnotation(args)
+    if args.multiMode:
         #splitReference(args)
 
     if args.multiMode:
