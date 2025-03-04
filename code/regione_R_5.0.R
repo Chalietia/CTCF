@@ -11,8 +11,8 @@ if (length(args) == 0) {
 }
 
 # Uncomment these lines to accept paths and parameters as arguments
-# pwd_bed <- as.string(args[1])           # Path to BED directory
-# pwd_target <- as.string(args[2])        # Path to target region directory
+# pwd_bed <- as.string(args[1])           # Path to BEDGRAPH directory (your genomic track file)
+# pwd_target <- as.string(args[2])        # Path to target region directory (your TF binding profile)
 # n = args[3]                             # Number of permutations
 # pwd_outdir <- as.string(args[4])        # Path to output directory
 # pwd_univ <- as.string(args[5])          # Path to universal background BED file
